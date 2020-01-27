@@ -1,0 +1,38 @@
+<div class="col-md-4 mx-auto">
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+
+
+    <div class="card">
+        <div class="card-body">
+            <form action="/links/edit_users/{{userd.id}}" method="POST">
+                <div class="form-group">
+                    <input type="text" name="fullname" class="form-control" placeholder="Title" value="{{userd.fullname}}"  disabled autofocus>
+                </div>
+                
+                <div class="form-group">
+                    <!--input type="text" name="id_perfiles" class="form-control" placeholder="URL" value="{{userd.id_perfiles}}">-->
+                          <SELECT class="custom-select" name="id_perfiles" SIZE=1 > 
+                           {{#each userper}}
+<OPTION VALUE="{{id_perfiles}}">{{nombre_perfiles}}</OPTION>
+  {{/each}}
+  </SELECT > 
+ 
+                </div>
+                <div class="form-group">
+                  <!--  <textarea name="description" rows="2" class="form-control" placeholder="Description">{{link.description}}</textarea>-->
+                </div>
+                <div class="form-group">
+                    <button class="btn btn-dark btn-block" >
+                        
+                        Save
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

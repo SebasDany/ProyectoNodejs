@@ -1,0 +1,48 @@
+
+<div class="col-sm-12" >
+    <div class="row">
+        {{#each links}}
+      
+        <div class="col-sm-5" style=' margin: 5px; ' >
+            <div class="card text-center">
+                <div class="card-body">
+                    
+                    <a href="{{url}}">
+                        <div class="card-header">
+                        <h3 class="card-title text-uppercase">
+                            <font size=4>
+                            {{title}}
+                            </font>
+                        </h3>
+                        </div>
+
+</a>
+                    
+                    <p class="text-muted"><font size=4>
+                        
+                       {{description}}  </font></p>
+                   
+                <a class="btn btn-danger" href="/links/delete/{{id}}">
+                        Delete Link
+                    </a>
+                    <a class="btn btn-secondary" href="/links/edit/{{id}}">
+                        Edit
+                    </a>
+                </div>
+            </div>
+        </div>
+        {{else}}
+        <div class="col-md-4 mx-auto">
+            <div class="card card-body text-center">
+                <p>Ha sido creada su cuenta para el proceso de titulación</p>
+                <a href="/links">Continuar</a>
+            </div>
+        </div>
+        {{/each}}
+
+       
+       
+             
+      
+    </div>
+</div>

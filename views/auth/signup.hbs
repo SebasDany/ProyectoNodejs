@@ -1,0 +1,119 @@
+<div class="container">
+  <div class="row">
+    <div class="col-sm">
+<div class="container p-4">
+  <div class="row">
+    <div class="col-md-4 mx-auto">
+  
+        <div class="card-header">
+          <h3><center>Crear un nuevo usuario</center></h3>
+        </div>
+        <div class="card-body">
+          <form action="/signup" method="POST">
+            <div class="form-group">
+              <input type="type" name="fullname" placeholder="Nombre Completo" class="form-control" autofocus>
+            </div>
+            <div class="form-group">
+             <input type="text" name="username" placeholder="Usuario" class="form-control">
+            </div>
+            <div class="form-group">
+            <input type="password" name="password" placeholder="Contraseña" class="form-control">
+            </div>
+            <div class="form-group">
+              <SELECT class="custom-select" name="id_perfiles" SIZE=1 > 
+         {{#each result2}}
+<OPTION VALUE="{{id_perfiles}}">{{nombre_perfiles}}</OPTION>
+  {{/each}}
+</SELECT> 
+
+
+
+</br>
+
+</br>
+
+</br>
+
+</br>
+   
+
+    
+
+
+              <button class="btn btn-success btn-block" style="background:black">
+               Enviar
+              </button>
+ 
+      
+      
+      
+
+
+
+            </div>
+          </form>
+           
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+    </div>
+    <div class="col-sm">
+
+      <table class="table">
+
+  <thead class="thead-dark" >
+    <tr>
+      <!--<th scope="col">#</th>-->
+      <th scope="col"><font size=4>Nombre</font></th>
+      <th scope="col"><font size=4>Perfil</font></th>
+      <th scope="col"><font size=4>Editar Perfil</font></th>
+    </tr>
+      
+  </thead>
+  <tbody>
+    {{#each result1}}
+    
+      
+ 
+      
+      <td><font size=4></font>{{fullname}}</td>
+      <td>{{nombre_perfiles}}</td>
+
+    <!--<td> <a class="btn btn-danger" href="/links/delete/{{id}}">
+                        Delete Link
+                    </a>
+                    
+                    </td>-->
+
+                    <td>
+                    <a class="btn btn-dark" href="/links/edit_users/{{id}}">
+                        Edit
+                    </a>
+  </td>
+      
+    </tr>
+    
+     {{/each}}
+    <!--<tr>
+      <th scope="row">2</th>
+      <td>Jacob</td>
+      <td>Thornton</td>
+      <td>@fat</td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td>Larry</td>
+      <td>the Bird</td>
+      <td>@twitter</td>
+    </tr>-->
+  </tbody>
+</table>
+
+   
+  </div>
+</div>
+

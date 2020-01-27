@@ -1,0 +1,84 @@
+body {
+    background: #f5f6fa;
+   
+}
+
+
+
+.navbar {
+    background: black !important;
+}
+
+.nav-link {
+    color: #fff !important;
+}
+
+.masthead {
+    color: white;
+    min-height: 30rem;
+    width: 100%;
+    height: 100%;
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+    background: url('/img/background.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.masthead1 {
+ 
+ 
+ 
+
+  
+ 
+  background: url('/img/background.jpg');
+ 
+  background-repeat: no-repeat;
+  
+  
+}
+
+.mastheadp {
+background: #030a19;
+}
+
+
+.masthead h1 {
+    font-size: 4rem;
+    margin: 0;
+    padding: 0;
+  }
+  
+  @media (min-width: 992px) {
+    .masthead {
+      height: 100vh;
+    }
+    .masthead h1 {
+      font-size: 5.5rem;
+    }
+  }
+
+
+html {
+  min-height: 100%;
+  position: relative;
+}
+body {
+  margin: 0;
+  margin-bottom: 50px;
+}
+footer {
+  background-color: black;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 50px;
+  color: white;
+}
+.navbar{
+        color: black;
+        width: 100%;
+        height: 75px;
+}
